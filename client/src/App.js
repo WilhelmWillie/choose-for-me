@@ -5,6 +5,8 @@ import Home from './pages/Home'
 import Choose from './pages/Choose'
 import Create from './pages/Create'
 
+import './styles/stylesheet.scss'
+
 export default () => (
   <Router>
     <Route path='/' exact component={Home} />
