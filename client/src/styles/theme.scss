@@ -13,8 +13,22 @@ body {
   display: inline-block;
   border-radius: 999px;
   text-decoration: none;
+  border: none;
 }
 
 .text-center {
   text-align: center;
+}
+
+/* Universal buttons */
+.back-button {
+  position: fixed;
+  left: 45px;
+  top: 45px;
+}
+
+.create-button {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
 }

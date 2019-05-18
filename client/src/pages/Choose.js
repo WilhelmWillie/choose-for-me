@@ -1,22 +1,21 @@
 import React from 'react'
 
+import { Link } from 'react-router-dom'
+
+import Poll from '../components/Poll'
+
 export default () => (
   <div className='choose'>
     <div className='container'>
-      <p className='question'>Who's your favorite Avenger?</p>
-
-      <div className='choices'>
-        <div className='choice'>Captain America</div>
-        <div className='choice'>Dr. Strange</div>
-        <div className='choice'>Iron Man</div>
-      </div>
-
-      <div className='text-center'>
-        <a className='button'>Submit</a>
-      </div>
+      <Poll />
     </div>
 
-    <div className='button back-button'>Back</div>
-    <div className='button create-button'>Create Your Own</div>
+    <Link to='/'>
+      <div className='button back-button'><span className="icon"><i className='fas fa-arrow-left'></i></span> Back</div>
+    </Link>
+
+    <Link to='/create'>
+      <div className='button create-button'><span className='icon'><i className='fas fa-plus-square'></i></span> Create Your Own</div>
+    </Link>
   </div>
 )

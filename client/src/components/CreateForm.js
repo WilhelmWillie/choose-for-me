@@ -1,41 +1,27 @@
 import React from 'react'
 
 export default () => (
-  <div>
-    <form>
-      <div>
-        <label>Title</label>
+  <form className='create-form'>
+    <h2>Question</h2>
 
-        <input type='text' placeholder='Choose the best Avenger' />
-      </div>
+    <div className="input-group">
+      <input type='text' placeholder='Choose the best Avenger' />
+    </div>
 
-      <h2>Choices</h2>
+    <h2>Choices</h2>
 
-      <div>
-        <label>Choice A</label>
+    <div className="input-group">
+      <input type='text' placeholder='Iron Man' />
+    </div>
 
-        <input type='text' placeholder='Iron Man' />
-      </div>
+    <div className="input-group">
+      <input type='text' placeholder='Captain America' />
+    </div>
 
-      <div>
-        <label>Choice B</label>
+    <div className="input-group">
+      <input type='text' placeholder='Thor' />
+    </div>
 
-        <input type='text' placeholder='Captain America' />
-      </div>
-
-      <div>
-        <label>Choice C</label>
-
-        <input type='text' placeholder='Thor' />
-      </div>
-
-      <div>
-        <label>Enable multi-select?</label>
-
-        <input type='checkbox' />
-      </div>
-
-      <input type='submit' value='Create Poll' />
-    </form>
-  </div>
+    <input type='submit' value='Create Poll' className='button' />
+  </form>
 )
