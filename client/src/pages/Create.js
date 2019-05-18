@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 import CreateForm from '../components/CreateForm'
 
-export default () => (
+export default ({history}) => (
   <div className='create'>
     <div className='container'>
-      <CreateForm />
+      <CreateForm history={history}/>
     </div>
 
     <Link to='/'>
