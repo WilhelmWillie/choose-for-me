@@ -94,6 +94,21 @@ const Mutation = new GraphQLObjectType({
 
         return poll.save()
       }
+    },
+    voteInPoll: {
+      type: PollType,
+      args: {
+        id: { type: GraphQLID },
+        choiceIndex: { type: GraphQLInt }
+      },
+      resolve(parent, args) {
+        return Poll.findById(args.id).exec().then((poll) => {
+          poll.choices[args.choiceIndex].votes++
+          poll.save()
+
+          return poll
+        })
+      }
     }
   }
 })
