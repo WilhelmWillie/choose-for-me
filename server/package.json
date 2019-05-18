@@ -4,11 +4,15 @@
   "description": "App that let's anonymous people make decisions for you.",
   "main": "server.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "npx nodemon app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.0",
+    "mongoose": "^5.5.9",
+    "rand-token": "^0.4.0"
   }
 }
