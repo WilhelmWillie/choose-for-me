@@ -26,3 +26,19 @@ body {
     opacity: 0.7;
   }
 }
+
+/* Header */
+.header {
+  background: #97C645;
+  padding: 1rem 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .header-logo {
+    width: 48px;
+  }
+}

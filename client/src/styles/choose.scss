@@ -1,0 +1,68 @@
+.choose {
+  .poll {
+    padding: 3rem 0;
+  }
+
+  .question {
+    font-size: 2rem;
+    text-align: center;
+    color: #607B2E;
+    font-weight: 600;
+  }
+
+  .choices {
+    width: 70%;
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    .choice {
+      background: #97C645;
+      border-radius: 9px;
+      padding: 1rem 1.5rem;
+      color: #FFFFFF;
+      font-size: 1.2rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
+      opacity: 0.6;
+      display: flex;
+      align-items: center;
+
+      transition: 0.2s all;
+      -webkit-transition: 0.2s all;
+
+      .check {
+        opacity: 0;
+        width: 0;
+        margin-right: 1rem;
+        transition: 0.2s all;
+        -webkit-transition: 0.2s all;
+      }
+
+      &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      &.choice-active {
+        opacity: 1;
+
+        .check {
+          width: 18px;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  .submit-button {
+    width: 70%;
+    max-width: 640px;
+    margin: 3rem auto 0;
+    text-align: right;
+
+    a {
+      cursor: pointer;
+    }
+  }
+}

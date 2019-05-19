@@ -30,15 +30,19 @@ class Poll extends Component {
           onClick={() => {
             this.updateChoiceIndex(index)
           }}
-        >{choice.label}</div>
+        ><img src='/logo_check.svg' alt='Check' className='check' /> {choice.label}</div>
       ))
 
       return (
-        <div>
-          <p className='question'>{poll.question}</p>
+        <div className='poll'>
+          <h2 className='question'>{poll.question}</h2>
 
           <div className='choices'>
             {choices}
+          </div>
+
+          <div className='submit-button'>
+            <a className='button' onClick={this.submitForm}>Submit</a>
           </div>
         </div>
       )
@@ -67,10 +71,6 @@ class Poll extends Component {
     return (
       <div>
         {this.displayPoll()}
-
-        <div className='text-center'>
-          <a className='button' onClick={this.submitForm}>Submit</a>
-        </div>
       </div>
     )
   }
