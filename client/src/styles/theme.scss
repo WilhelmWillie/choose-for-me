@@ -1,33 +1,28 @@
 /* Core styles and design atoms for the application */
 body {
   margin: 0;
-  background-color: #FAACA8;
-  font-family: 'Lato';
+  background-color: #F5F4F0;
+  font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-/* Buttons */
+/* Universal button */
 .button {
-  padding: 1rem 1.5rem;
   background: #FFFFFF;
-  display: inline-block;
-  border-radius: 999px;
-  text-decoration: none;
-  border: none;
-}
-
-.text-center {
+  font-size: 1.1rem;
+  color: #9BBD59;
+  letter-spacing: 0;
   text-align: center;
-}
+  font-weight: 200;
+  text-transform: uppercase;
+  padding: 0.8rem 1.5rem;
+  border-radius: 999px;
+  box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+  text-decoration: none;
 
-/* Universal buttons */
-.back-button {
-  position: fixed;
-  left: 45px;
-  top: 45px;
-}
+  transition: 0.25s all;
+  -webkit-transition: 0.25s all;
 
-.create-button {
-  position: fixed;
-  right: 45px;
-  bottom: 45px;
+  &:hover {
+    opacity: 0.7;
+  }
 }
