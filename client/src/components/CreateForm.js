@@ -91,19 +91,26 @@ class CreateForm extends Component {
           <input
             type='text'
             placeholder='Enter question here...'
+            className='question-input'
             onChange={(e) => { this.updateQuestion(e.target.value) }}
           />
         </div>
+
+        <br/>
 
         <h2>Choices</h2>
 
         {choices}
 
-        <input type='button' value='Add Choice' className='button' onClick={this.addChoice} />
+        <div className='button add-choice' onClick={this.addChoice}>
+          Add Choice
+        </div>
 
         <br/><br/>
 
-        <input type='submit' value='Create Poll' className='button' />
+        <div className='submit-poll'>
+          <input type='submit' value='Create Poll' className='button' />
+        </div>
       </form>
     )
   }

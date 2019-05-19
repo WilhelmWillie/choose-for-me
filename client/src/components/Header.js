@@ -3,7 +3,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default ({page}) => {
-  const button = (page === 'CHOOSE') ? (
+  const button = (page !== 'CHOOSE') ? (
     <Link to='/choose' className='button'>Choose</Link>
   ) : (
     <Link to='/create' className='button'>Create</Link>

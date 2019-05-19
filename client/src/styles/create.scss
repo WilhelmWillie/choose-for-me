@@ -1,0 +1,52 @@
+.create {
+  .create-form {
+    width: 70%;
+    max-width: 640px;
+    margin: 0 auto;
+    margin-top: 2rem;
+
+    h2 {
+      font-weight: 200;
+      text-transform: uppercase;
+      font-size: 1.5rem;
+    }
+
+    .input-group {
+      margin: 1rem 0;
+      position: relative;
+    }
+
+    input[type=text] {
+      width: 100%;
+      font-size: 1.2rem;
+      font-family: Lato, sans-serif;
+      font-weight: 500;
+      padding: 0.5rem 0;
+      background: transparent;
+      border: none;
+      color: #454545;
+      border-bottom: 1px solid #A5A5A5;
+
+      &.question-input {
+        font-size: 2rem;
+      }
+    }
+
+    .remove-choice {
+      position: absolute;
+      top: 15px;
+      right: 10px;
+      color: #B4B4B4;
+      cursor: pointer;
+    }
+
+    .add-choice {
+      background: rgba(0,0,0,0.15);
+      color: #454545;
+    }
+
+    .submit-poll {
+      text-align: right;
+    }
+  }
+}

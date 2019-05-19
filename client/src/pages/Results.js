@@ -8,14 +8,15 @@ import { getPollResultsQuery } from '../queries'
 
 import { Link } from 'react-router-dom'
 
+import Header from '../components/Header'
+
 const Results = ({data, location}) => {
   const variables = queryString.parse(location.search)
 
   return (
-    <div className='choose'>
+    <div className='results'>
+      <Header page='create' />
       <div className='container'>
-        <h1>Results for Poll</h1>
-
         <Query
           query={getPollResultsQuery}
           variables={variables}
@@ -27,11 +28,14 @@ const Results = ({data, location}) => {
             const poll = data.poll
 
             const choices = poll.choices.map((choice, index) => (
-              <p>{choice.label} ({choice.votes} votes)</p>
+              <div className='choice'>
+                <span className='choice-label'>{choice.label}</span>
+                <span className='choice-votes'>{choice.votes} votes</span>
+              </div>
             ))
             return (
-              <div>
-                <h1>Question: {poll.question}</h1>
+              <div className='results-container'>
+                <h1 className='question'>Results: {poll.question}</h1>
 
                 {choices}
               </div>

@@ -7,7 +7,7 @@ import Poll from '../components/Poll'
 
 export default () => (
   <div className='choose'>
-    <Header />
+    <Header page='CHOOSE'/>
 
     <div className='container'>
       <Poll />
