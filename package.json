@@ -1,0 +1,8 @@
+{
+  "name": "choose-for-me",
+  "version": "0.1.0",
+  "scripts": {
+    "postinstall": "npm install --prefix server && npm install --prefix client",
+    "prod": "npm run --prefix client build && npm --prefix server start"
+  }
+}
