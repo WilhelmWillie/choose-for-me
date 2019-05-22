@@ -5,6 +5,10 @@
     margin: 0 auto;
     margin-top: 2rem;
 
+    @media screen and (max-width: 768px) {
+      width: 93.5%;
+    }
+
     h2 {
       font-weight: 200;
       text-transform: uppercase;
@@ -47,6 +51,7 @@
 
     .submit-poll {
       text-align: right;
+      margin-bottom: 2rem;
     }
   }
 }

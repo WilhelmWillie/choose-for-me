@@ -16,7 +16,7 @@ export default (props) => {
       <div className='container'>
         <h1>Poll Created Successfully</h1>
 
-        <p>Bookmark the following link to view results to your poll</p>
+        <p>Your poll can now be voted on by other anonymous users!<br/><br/>To view results, bookmark the following unique generated results link.</p>
 
         <Link to={`/results?id=${data.id}&secretKey=${data.secretKey}`} className='button'>Results Link</Link>
       </div>

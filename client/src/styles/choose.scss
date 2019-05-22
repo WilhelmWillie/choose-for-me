@@ -16,6 +16,10 @@
     margin: 0 auto;
     margin-top: 2rem;
 
+    @media screen and (max-width: 768px) {
+      width: 93.5%;
+    }
+
     .choice {
       background: #97C645;
       border-radius: 9px;
@@ -60,6 +64,10 @@
     max-width: 640px;
     margin: 3rem auto 0;
     text-align: right;
+
+    @media screen and (max-width: 768px) {
+      width: 93.5%;
+    }
 
     a {
       cursor: pointer;

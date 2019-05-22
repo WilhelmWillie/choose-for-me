@@ -23,10 +23,21 @@
 
   .hero-logo {
     max-width: 100%;
+
+    @media screen and (max-width: 768px) {
+      width: 60%;
+      max-width: 300px;
+      display: block;
+      margin: 0 auto 1rem;
+    }
   }
 
   .hero-content {
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   .hero-cta-group {
@@ -68,6 +79,14 @@
     .half {
       display: flex;
       flex-direction: column;
+
+      @media screen and (max-width: 768px) {
+        margin-bottom: 1rem;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }
